@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #c9d6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus,
+form button:focus {
+    outline: none;
+    border-color: #2d60a8;
+}
+
+form button {
+    background-color: #2d60a8;
+    color: #fff;
+    font-size: 14px; /* Modifica la dimensione del testo del bottone */
+    padding: 8px 20px; /* Modifica il padding del bottone */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1e4a7e;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-icons .icon {
+    font-size: 24px;
+    margin: 0 5px;
+    color: #333;
+    transition: color 0.3s ease;
+    border-radius: 50%; 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    text-decoration: none;
+}
+
+.social-icons .icon:hover {
+    color: #2d60a8;
+    background-color: #ccc;
+}
+
+form a[href="#"] {
+    display: block;
+    margin-top: 10px; /* Aggiunge spazio sopra il link */
+}
